@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh; /* Vertically center the form */
 }
 
 .buttons {
@@ -64,6 +65,102 @@ h2 {
 }
 
 .muted {
-    font-size: 10px;
+    font-size: 18px;
     color: darkgray;
+}
+
+/* Style the "Join a Room" button */
+button[name="join"], .create-btn {
+    margin-left: 5px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth hover effect */
+}
+
+button[name="join"]:hover, .create-btn:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Add spacing between elements */
+.buttons div {
+    margin-bottom: 10px;
+}
+
+/* Style error messages */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #ff0000; /* Red error text */
+}
+
+
+body {
+    background-color: #aaf0d1; /* Light greenish color */
+}
+
+/* Style the form */
+.buttons {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transform: scale(1.6); /* Scale the outer element to 150% of its original size */
+    transform-origin: center; /* Center the scaling transformation */
+}
+
+
+/* Style the form elements */
+.buttons h3 {
+    font-size: 15px;
+    text-align: center;
+    color: #333; /* Dark gray text color */
+}
+
+.buttons label {
+    color: #333;
+}
+
+/* Add styling for the flashy title */
+.flashy-title {
+    font-size: 3rem; /* Adjust the font size as needed */
+    color: #00CED1; /* Choose your preferred flashy color (e.g., magenta) */
+    text-align: center;
+    text-transform: uppercase; /* Uppercase the text for added emphasis */
+    letter-spacing: 4px; /* Add letter spacing for a bold look */
+    margin-bottom: 10px; /* Add some spacing below the title */
+    /* You can also add animations, gradients, or other effects for additional flashiness */
+}
+
+/* Increase the font size for the entire page */
+body {
+    font-size: 28px; /* Adjust the font size as needed */
+}
+
+/* Increase the font size for specific elements within the chat window */
+.message-box {
+    /* ... (other styles for .message-box) */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Style the "Send" button with a larger font size */
+#send-btn {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Increase the font size for the message text */
+.text {
+    /* ... (other styles for .text) */
+    font-size: 26px; /* Adjust the font size as needed */
+}
+
+
+label {
+    font-size: 16px;
 }

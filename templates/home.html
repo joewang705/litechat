@@ -2,16 +2,17 @@
 {% block content %}
 
 <form method="post" class="buttons">
-    <h3>Enter the Chat Room</h3>
+    <h1 class="flashy-title">LiteChat</h1>
     <div>
         <label>Name:</label>
         <input type="text" placeholder="Pick a name!" name="name" value="{{name}}"/>
     </div>
+    <h3>Join a Chat Room!</h3>
     <div class="join">
         <input type="text" placeholder="Room Code" name="code" value="{{code}}"/>
-        <button type="submit" name="join">Join a Room</button>
-
+        <button type="submit" name="join">Join</button>
     </div>
+    <h3>Don't have a room to join? Create one!</h3>
     <button type="submit" name="create" class="create-btn">Create a Room</button>
     {% if error %}
     <ul>
